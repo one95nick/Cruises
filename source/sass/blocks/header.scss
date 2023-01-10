@@ -1,0 +1,109 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 280px;
+
+  color: $color-alice-blue;
+
+  background-color: #3576c5;
+  background-image: url("../img/backgrounds/main_desktop.png");
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/main_desktop@2x.png");
+  }
+
+  @media (max-width: 1023px) {
+    background-image: url("../img/backgrounds/main_tablet.png");
+    box-shadow: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/main_tablet@2x.png");
+    }
+  }
+
+  @media (max-width: 767px) {
+    background-image: url("../img/backgrounds/main_mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/main_mobile@2x.png");
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  margin-left: auto;
+
+  @media (max-width: 767px) {
+    position: relative;
+
+    display: none;
+    flex-direction: column;
+
+    background-color: $color-alice-blue;
+  }
+}
+
+.header__toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.header.is-active .header__logo {
+  display: none;
+}
+
+.header.no-js .header__toggle {
+  display: none;
+}
+
+.header.no-js .header__navigation,
+.header.is-active .header__navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  padding-right: 12%;
+  padding-bottom: 300px;
+  padding-left: 7%;
+
+  background-image: url("../img/svg/logo_menu.svg");
+  background-repeat: no-repeat;
+  background-position-x: 15%;
+  background-position-y: 20px;
+}
+
+.header__open-icon {
+  display: block;
+}
+
+.header__close-icon {
+  display: none;
+}
+
+.header.is-active .header__open-icon {
+  display: none;
+}
+
+.header.is-active .header__close-icon {
+  display: block;
+}

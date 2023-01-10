@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-tangaroa;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
