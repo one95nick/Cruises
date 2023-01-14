@@ -16,11 +16,7 @@
         <div class="container">
           <div class="header__wrapper">
             <a class="header__logo logo" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
-                <source media="(max-width: 1023px)" srcset="img/svg/logo_tablet.svg">
-                <img class="logo__image" src="img/svg/logo_desktop.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
-              </picture>
+              <img class="logo__image" src="img/svg/logo.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
             </a>
             <nav class="header__navigation navigation">
               <ul class="navigation__list navigation-list">
@@ -30,7 +26,7 @@
                   </a>
                 </li>
                 <li class="navigation-list__item">
-                  <a class="navigation-list__link" href="#destinations">
+                  <a class="navigation-list__link" href="#">
                     Направления
                   </a>
                 </li>
@@ -56,16 +52,22 @@
             </button>
           </div>
           <div class="banner">
-            <h1 class="banner__title">Круизы в Антарктику</h1>
-            <p class="banner__text">Волшебный мир айсбергов и пингвинов</p>
+            <h1 class="banner__title">
+              Круизы в Антарктику
+            </h1>
+            <p class="banner__text">
+              Волшебный мир айсбергов и пингвинов
+            </p>
           </div>
         </div>
       </header>
       <main>
         <section class="travel">
-          <div class="container">
-            <div class="travel__wrapper">
-              <h2 class="travel__title">Путешествие на край Земли</h2>
+          <div class="container travel__wrapper">
+            <div class="travel__text-wrapper">
+              <h2 class="travel__title">
+                Путешествие на край Земли
+              </h2>
               <p class="travel__text">
                 Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным
                 миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли,
@@ -73,12 +75,433 @@
                 морских котиков и&nbsp;многое другое.
               </p>
             </div>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/content/penguins_mobile.webp 1x, img/content/penguins_mobile@2x.webp" type="image/webp">
-            <source media="(max-width: 1023px)" srcset="img/content/penguins_tablet.webp 1x, img/content/penguins_tablet@2x.webp" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="img/content/penguins_desktop.webp 1x, img/content/penguins_desktop@2x.webp" type="image/webp">
-            <img class="travel__image" src="img/content/penguins_desktop.jpg" alt="Пингвины" width="560" height="301">
-          </picture>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/content/penguins_mobile.webp 1x, img/content/penguins_mobile@2x.webp" type="image/webp">
+              <source media="(max-width: 1023px)" srcset="img/content/penguins_tablet.webp 1x, img/content/penguins_tablet@2x.webp" type="image/webp">
+              <source media="(min-width: 1024px)" srcset="img/content/penguins_desktop.webp 1x, img/content/penguins_desktop@2x.webp" type="image/webp">
+              <img class="travel__image" src="img/content/penguins_desktop.jpg" alt="Пингвины" width="560" height="301">
+            </picture>
+          </div>
+        </section>
+        <section class="advantages" id="advantages">
+          <div class="container">
+            <h2 class="advantages__title">
+              Преимущества
+            </h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--lainer">
+                <h3 class="advantages__item-title">
+                  Небольшой круизный лайнер
+                </h3>
+                <p class="advantages__item-text">
+                  Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей,
+                  поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--all-inclusive">
+                <h3 class="advantages__item-title">
+                  Система все включено
+                </h3>
+                <p class="advantages__item-text">
+                  Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;.
+                  Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--boat">
+                <h3 class="advantages__item-title">
+                  Экскурсионные туры на Zodiac
+                </h3>
+                <p class="advantages__item-text">
+                  Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках
+                  типа Zodiack c&nbsp;опытными экскурсоводами.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="cruises" id="cruises">
+          <div class="container">
+            <h2 class="cruises__title">
+              Ближайшие круизы
+            </h2>
+            <ul class="cruises__list">
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/astoria_mobile.webp 1x, img/content/astoria_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/astoria_tablet.webp 1x, img/content/astoria_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/astoria_desktop.jpg" alt="Круиз Астория" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Астория”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз "Астория"
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Фолклендские острова - Антарктида
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Ушуайя
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd
+                      11 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 11500 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/astoria_mobile.webp 1x, img/content/astoria_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/astoria_tablet.webp 1x, img/content/astoria_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/astoria_desktop.jpg" alt="Круиз Элайн" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Элайн”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз “Элайн”
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Фолклендские острова - Антарктида - Чили
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Буэнос-Айрес
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      20 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 14500 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/atlantis_mobile.webp 1x, img/content/atlantis_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/atlantis_tablet.webp 1x, img/content/atlantis_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/atlantis_desktop.webp 1x, img/content/atlantis_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/atlantis_desktop.jpg" alt="Круиз Атлантис" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз ”Атлантис”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз ”Атлантис”
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Ушуайя
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      15 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 14500 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/odissey_mobile.webp 1x, img/content/odissey_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/odissey_tablet.webp 1x, img/content/odissey_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/odissey_desktop.webp 1x, img/content/odissey_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/odissey_desktop.jpg" alt="Круиз Одиссей" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Одиссей”
+                  </h3>
+                  <div class="card__lower-side">
+                    <h3>
+                      Круиз “Одиссей”
+                    </h3>
+                    <dl>
+                      <dt>
+                        Маршрут
+                      </dt>
+                      <dd>
+                        Чили - Антарктида
+                      </dd>
+                      <dt>
+                        Порт отправления
+                      </dt>
+                      <dd>
+                        Пунта-Аренас
+                      </dd>
+                      <dt>
+                        Продолжительность
+                      </dt>
+                      <dd>
+                        13 дней
+                      </dd>
+                      <dt>
+                        Цена
+                      </dt>
+                      <dd>
+                        от 9700 $
+                      </dd>
+                    </dl>
+                    <a class="card__btn btn" href="#">
+                      Забронировать
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/olimpia_mobile.webp 1x, img/content/olimpia_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/olimpia_tablet.webp 1x, img/content/olimpia_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/olimpia_desktop.webp 1x, img/content/olimpia_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/olimpia_desktop.jpg" alt="Круиз Олимпия" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Олимпия”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз "Олимпия"
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Фолклендские острова - Южная Георгия - Антарктида
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Ушуайя
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      21 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 18600 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/aurora_mobile.webp 1x, img/content/aurora_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/aurora_tablet.webp 1x, img/content/aurora_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/aurora_desktop.webp 1x, img/content/aurora_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/aurora_desktop.jpg" alt="Круиз Аврора" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Аврора”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз "Аврора"
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Антарктида - Чили
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Ушуайя
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      14 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 11700 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/leonor_mobile.webp 1x, img/content/leonor_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/leonor_tablet.webp 1x, img/content/leonor_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/leonor_desktop.webp 1x, img/content/leonor_desktop@2x.webp" type="image/webp">
+                    <img class="card_image" src="img/content/leonor_desktop.jpg" alt="Круиз Леонор" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Леонор”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз "Леонор"
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Чили - Южная Георгия - Антарктида - Аргентина
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Пунта-Аренас
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      17 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 12500 $
+                    </dd>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+              <li class="cruises__card card">
+                <div class="card__upper-side">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="img/content/minion_mobile.webp 1x, img/content/minion_mobile@2x.webp" type="image/webp">
+                    <source media="(max-width: 1023px)" srcset="img/content/minion_tablet.webp 1x, img/content/minion_tablet@2x.webp" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="img/content/minion_desktop.webp 1x, img/content/minion_desktop@2x.webp" type="image/webp">
+                    <img class="card__image" src="img/content/minion_desktop.jpg" alt="Круиз Минион-1" width="260" height="386">
+                  </picture>
+                  <h3>
+                    Круиз “Минион-1”
+                  </h3>
+                </div>
+                <div class="card__lower-side">
+                  <h3>
+                    Круиз "Минион-1"
+                  </h3>
+                  <dl>
+                    <dt>
+                      Маршрут
+                    </dt>
+                    <dd>
+                      Аргентина - Антарктида
+                    </dd>
+                    <dt>
+                      Порт отправления
+                    </dt>
+                    <dd>
+                      Ушуайя
+                    </dd>
+                    <dt>
+                      Продолжительность
+                    </dt>
+                    <dd>
+                      11 дней
+                    </dd>
+                    <dt>
+                      Цена
+                    </dt>
+                    <dd>
+                      от 12300 $
+                    </dl>
+                  </dl>
+                  <a class="card__btn btn" href="#">
+                    Забронировать
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="intro">
@@ -95,11 +518,7 @@
         <div class="container">
           <div class="footer__wrapper">
             <a class="footer__logo logo" href="#">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo_mobile.svg">
-                <source media="(max-width: 1023px)" srcset="img/svg/logo_tablet.svg">
-                <img class="logo__image" src="img/svg/logo_desktop.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
-              </picture>
+              <img class="logo__image" src="img/svg/logo.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
             </a>
             <nav class="footer__navigation navigation">
               <ul class="navigation__list navigation-list">
@@ -109,7 +528,7 @@
                   </a>
                 </li>
                 <li class="navigation-list__item">
-                  <a class="navigation-list__link navigation-list__link--footer" href="#destinations">
+                  <a class="navigation-list__link navigation-list__link--footer" href="#">
                     Направления
                   </a>
                 </li>

@@ -549,7 +549,7 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 10px 23%;
   color: #ffffff;
   background-color: #2c39f2;
   border: none;
@@ -814,6 +814,19 @@ button,
   display: block;
 }
 
+@media (max-width: 1023px) {
+  .logo__image {
+    width: 38px;
+    height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .logo__image {
+    width: 42px;
+    height: 22px;
+  }
+}
+
 .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,6 +942,28 @@ button,
 .travel {
   background-color: #f9fbfd;
   padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.travel__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .travel__wrapper {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.travel__text-wrapper {
+  max-width: 50%;
+}
+@media (max-width: 767px) {
+  .travel__text-wrapper {
+    max-width: 100%;
+  }
 }
 
 .travel__title {
@@ -957,6 +992,282 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.travel__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #cfe4fb;
+  background-image: url("../img/backgrounds/features_desktop.png");
+  background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .advantages {
+    background-image: url("../img/backgrounds/features_desktop@2x.png");
+  }
+}
+@media (max-width: 1023px) {
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../img/backgrounds/features_tablet.png");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .advantages {
+    background-image: url("../img/backgrounds/features_tablet@2x.png");
+  }
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-image: url("../img/backgrounds/features_mobile.png");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .advantages {
+    background-image: url("../img/backgrounds/features_mobile@2x.png");
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .advantages__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 40px;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1023px) {
+  .advantages__list {
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__list {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+}
+
+.advantages__item {
+  padding: 87px 34px 50px 30px;
+  background-color: #f9fbfd;
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+}
+@media (max-width: 1023px) {
+  .advantages__item {
+    padding: 76px 16px 25px 20px;
+    background-position: 20px 26px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item {
+    background-position: 20px 25px;
+  }
+}
+.advantages__item--lainer {
+  background-image: url("../img/svg/lainer.svg");
+}
+@media (max-width: 1023px) {
+  .advantages__item--lainer {
+    background-size: 21px 26px;
+  }
+}
+.advantages__item--all-inclusive {
+  background-image: url("../img/svg/all_inclusive.svg");
+}
+@media (max-width: 1023px) {
+  .advantages__item--all-inclusive {
+    background-size: 27px 26px;
+  }
+}
+.advantages__item--boat {
+  background-image: url("../img/svg/boat.svg");
+}
+@media (max-width: 1023px) {
+  .advantages__item--boat {
+    background-size: 36px 26px;
+  }
+}
+
+.cruises {
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1023px) {
+  .cruises {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .cruises {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.cruises__title {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .cruises__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+@media (max-width: 767px) {
+  .cruises__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.cruises__list {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 30px;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1023px) {
+  .cruises__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .cruises__list {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
+}
+
+.card {
+  margin: 0;
+}
+
+.card__upper-side {
+  position: relative;
+}
+
+.card__upper-side h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+@media (max-width: 1023px) {
+  .card__upper-side h3 {
+    bottom: 35px;
+    left: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .card__upper-side h3 {
+    bottom: 25px;
+    left: 25px;
+  }
+}
+
+.card__lower-side {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 35px 25px;
+  color: #f9fbfd;
+  background-color: #011c40;
+}
+@media (max-width: 1023px) {
+  .card__lower-side {
+    padding: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .card__lower-side {
+    width: 270px;
+    padding: 35px 25px;
+  }
+}
+
+.card__lower-side h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__lower-side dt {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__lower-side dd {
+  max-width: 210px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card:hover .card__upper-side {
+  display: none;
+}
+
+.card:hover .card__lower-side {
+  display: block;
 }
 
 .footer {
