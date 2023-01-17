@@ -1,0 +1,28 @@
+.map {
+  width: 560px;
+  height: 306px;
+  margin-right: 100px;
+
+  background-image: url("../img/backgrounds/map.png");
+  background-size: cover;
+
+  @media (max-width: 1023px) {
+    width: 324px;
+    height: 335px;
+    margin-right: 31px;
+    margin-left: -8px;
+  }
+
+  @media (max-width: 767px) {
+    width: 290px;
+    height: 316px;
+    margin-right: 0;
+  }
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}

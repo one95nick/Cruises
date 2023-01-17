@@ -1,6 +1,6 @@
 .header {
   padding-top: 35px;
-  padding-bottom: 280px;
+  padding-bottom: 278px;
 
   color: $color-alice-blue;
 
@@ -15,8 +15,12 @@
   }
 
   @media (max-width: 1023px) {
+    padding-top: 27px;
+    padding-bottom: 255px;
+
     background-image: url("../img/backgrounds/main_tablet.png");
     box-shadow: none;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/main_tablet@2x.png");
@@ -24,11 +28,26 @@
   }
 
   @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 159px;
+
     background-image: url("../img/backgrounds/main_mobile.png");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/main_mobile@2x.png");
     }
+  }
+}
+
+.header__logo {
+  margin-left: 35px;
+
+  @media (max-width: 1023px) {
+    margin-left: 21px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 0;
   }
 }
 
@@ -52,13 +71,15 @@
 
 .header__toggle {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 20px;
 
   display: none;
+  width: 26px;
+  height: 12px;
 
-  background: transparent;
-  border: none;
+  background: 0 0;
+  border: 0;
 
   @media (max-width: 767px) {
     display: block;
@@ -73,6 +94,11 @@
   display: none;
 }
 
+.header.is-active .header__toggle {
+  top: 25px;
+  right: 8px;
+}
+
 .header.no-js .header__navigation,
 .header.is-active .header__navigation {
   position: absolute;
@@ -81,14 +107,11 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
-  padding-right: 12%;
-  padding-bottom: 300px;
-  padding-left: 7%;
+  padding: 85px 19% 300px 4%;
 
   background-image: url("../img/svg/logo_menu.svg");
   background-repeat: no-repeat;
-  background-position-x: 15%;
+  background-position-x: 6%;
   background-position-y: 20px;
 }
 

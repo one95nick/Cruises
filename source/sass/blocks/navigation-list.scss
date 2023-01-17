@@ -1,23 +1,35 @@
 .navigation-list {
   display: flex;
-  padding: 0;
   margin: 0;
+  margin-right: 18px;
+  padding: 0;
 
   list-style: none;
 
+  @media (max-width: 1023px) {
+    margin-right: 5px;
+  }
+
   @media (max-width: 767px) {
     flex-direction: column;
+    margin-right: 0;
   }
 }
 
 .navigation-list__item {
   @media (max-width: 767px) {
-    margin-bottom: 18px;
+    margin-bottom: 26px;
+  }
+
+  &--footer {
+    @media (max-width: 767px) {
+      margin-bottom: 8px;
+    }
   }
 }
 
 .navigation-list__link {
-  padding: 20px;
+  padding: 17px;
 
   font-weight: 500;
   font-size: 16px;
@@ -25,11 +37,14 @@
   color: $color-alice-blue;
 
   @media (max-width: 1023px) {
+    padding: 13px;
+
     font-size: 14px;
     line-height: 17px;
 
     &--footer {
-      padding: 7px;
+      margin-right: 10px;
+      padding: 2px 7px;
 
       font-size: 12px;
       line-height: 15px;
@@ -45,6 +60,11 @@
     color: $color-tangaroa;
 
     &--footer {
+      padding: 7px 5px 5px 0;
+
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
       color: $color-alice-blue;
     }
   }

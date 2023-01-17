@@ -1,8 +1,13 @@
 .social {
-  margin-left: auto;
+  margin-left: 24.9%;
+
+  @media (max-width: 1023px) {
+    margin-left: 7.7%;
+  }
 
   @media (max-width: 767px) {
-    margin-left: 0;
+    margin-top: 9px;
+    margin-left: -9px;
   }
 }
 
@@ -14,6 +19,27 @@
   list-style: none;
 }
 
+.social__item {
+  margin-right: 16px;
+
+  @media (max-width: 1023px) {
+    margin-right: 8px;
+  }
+}
+
 .social__link {
-  padding: 15px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+}
+
+.social__icon {
+  position: absolute;
+
+  @media (max-width: 1023px) {
+    scale: 0.8;
+  }
 }

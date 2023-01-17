@@ -1,27 +1,51 @@
 .travel {
-  background-color: $color-alice-blue;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 145px;
+
+  background-color: $color-alice-blue;
+
+  @media (max-width: 1023px) {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
+
+
+  @media (max-width: 767px) {
+    padding-top: 66px;
+    padding-bottom: 85px;
+  }
 }
 
 .travel__wrapper {
   display: flex;
+  justify-content: center;
 
   @media (max-width: 767px) {
-    display: grid;
+    flex-direction: column;
+    align-content: center;
   }
 }
 
 .travel__text-wrapper {
-  max-width: 50%;
+  max-width: 521px;
+  margin-right: 78px;
+
+  @media (max-width: 1023px) {
+    max-width: 324px;
+    margin-right: 25px;
+    margin-left: -6px;
+  }
 
   @media (max-width: 767px) {
     max-width: 100%;
+    margin: 0;
   }
 }
 
 .travel__title {
   margin: 0;
+  margin-top: 56px;
+  margin-bottom: 24px;
   padding: 0;
 
   font-weight: 600;
@@ -29,6 +53,10 @@
   line-height: 42px;
 
   @media (max-width: 1023px) {
+    max-width: 210px;
+    margin-top: -9px;
+    margin-bottom: 15px;
+
     font-size: 26px;
     line-height: 36px;
   }
@@ -46,8 +74,20 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 43px;
+  }
 }
 
 .travel__image {
   flex-shrink: 0;
+
+  @media (max-width: 1023px) {
+    max-width: 324px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 290px;
+  }
 }

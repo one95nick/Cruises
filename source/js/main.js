@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import IMask from 'imask';
 
 // const callbackModal = document.querySelector('.modal');
 // const callbackModalOpenButton = document.querySelector('.button--callback');
@@ -16,6 +17,13 @@ headerToggle.addEventListener('click', () => header.classList.toggle('is-active'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  const tel = document.querySelectorAll('[name="user-phone"]');
+
+  tel.forEach((elem) => {
+    IMask(elem, {
+      mask: '+{7}(000)000-00-00',
+    });
+  });
 
   // Utils
   // ---------------------------------
