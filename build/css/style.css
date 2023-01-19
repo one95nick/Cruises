@@ -1765,6 +1765,10 @@ button,
   }
 }
 
+.form-agreement input:focus + span {
+  outline: 3px solid #ff1553;
+}
+
 .form-agreement__input:checked + .form-agreement__checkbox::before {
   content: "";
   position: absolute;
@@ -1964,7 +1968,7 @@ button,
 .social {
   margin-left: auto;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1370px) {
   .social {
     margin-left: 24.9%;
   }

@@ -34,6 +34,11 @@
   }
 }
 
+
+.form-agreement input:focus + span {
+  outline: 3px solid $color-torch-red;
+}
+
 .form-agreement__input:checked + .form-agreement__checkbox::before {
   content: "";
   position: absolute;
