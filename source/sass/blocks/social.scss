@@ -1,7 +1,15 @@
 .social {
-  margin-left: 24.9%;
+  margin-left: auto;
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1440px) {
+    margin-left: 24.9%;
+  }
+
+  @media (max-width: 1365px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 770px) {
     margin-left: 7.7%;
   }
 

@@ -1962,9 +1962,19 @@ button,
 }
 
 .social {
-  margin-left: 24.9%;
+  margin-left: auto;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1440px) {
+  .social {
+    margin-left: 24.9%;
+  }
+}
+@media (max-width: 1365px) {
+  .social {
+    margin-left: auto;
+  }
+}
+@media (max-width: 770px) {
   .social {
     margin-left: 7.7%;
   }
@@ -2015,7 +2025,9 @@ button,
   .social__icon {
     scale: 0.8;
   }
-} /* @mixin hover-focus {
+}
+
+/* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
