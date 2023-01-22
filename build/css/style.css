@@ -492,6 +492,8 @@ button,
 .wrapper .footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .wrapper main {
   -webkit-box-flex: 1;
@@ -719,41 +721,56 @@ button,
   padding-bottom: 278px;
   color: #f9fbfd;
   background-color: #3576c5;
-  background-image: url("../img/backgrounds/main_desktop.png");
+  background-image: url("../img/backgrounds/main_desktop.webp");
   background-size: cover;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 1365px) {
+  .header {
+    padding-bottom: 115px;
+  }
+}
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .header {
-    background-image: url("../img/backgrounds/main_desktop@2x.png");
+    background-image: url("../img/backgrounds/main_desktop@2x.webp");
   }
 }
 @media (max-width: 1023px) {
   .header {
     padding-top: 27px;
     padding-bottom: 255px;
-    background-image: url("../img/backgrounds/main_tablet.png");
+    background-image: url("../img/backgrounds/main_tablet.webp");
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url("../img/backgrounds/main_tablet@2x.png");
+    background-image: url("../img/backgrounds/main_tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
   .header {
     padding-top: 20px;
     padding-bottom: 159px;
-    background-image: url("../img/backgrounds/main_mobile.png");
+    background-image: url("../img/backgrounds/main_mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url("../img/backgrounds/main_mobile@2x.png");
+    background-image: url("../img/backgrounds/main_mobile@2x.webp");
   }
+}
+
+.header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -774,6 +791,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -795,6 +814,7 @@ button,
 }
 
 .header__toggle {
+  z-index: 4;
   position: absolute;
   top: 25px;
   right: 20px;
@@ -810,6 +830,14 @@ button,
   }
 }
 
+.header.is-active body {
+  overflow: hidden;
+}
+
+.header.is-active {
+  padding-top: 42px;
+}
+
 .header.is-active .header__logo {
   display: none;
 }
@@ -823,11 +851,16 @@ button,
   right: 8px;
 }
 
+.header.is-active .header__overlay {
+  display: block;
+}
+
 .header.no-js .header__navigation,
 .header.is-active .header__navigation {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,6 +868,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100vh;
   padding: 85px 19% 300px 4%;
   background-image: url("../img/svg/logo_menu.svg");
   background-repeat: no-repeat;
@@ -879,6 +913,8 @@ button,
   margin-right: 18px;
   padding: 0;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1023px) {
   .navigation-list {
@@ -1117,36 +1153,36 @@ button,
   padding-top: 110px;
   padding-bottom: 120px;
   background-color: #cfe4fb;
-  background-image: url("../img/backgrounds/features_desktop.png");
+  background-image: url("../img/backgrounds/features_desktop.webp");
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/backgrounds/features_desktop@2x.png");
+    background-image: url("../img/backgrounds/features_desktop@2x.webp");
   }
 }
 @media (max-width: 1023px) {
   .advantages {
     padding-top: 90px;
     padding-bottom: 100px;
-    background-image: url("../img/backgrounds/features_tablet.png");
+    background-image: url("../img/backgrounds/features_tablet.webp");
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/backgrounds/features_tablet@2x.png");
+    background-image: url("../img/backgrounds/features_tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
   .advantages {
     padding-top: 57px;
     padding-bottom: 65px;
-    background-image: url("../img/backgrounds/features_mobile.png");
+    background-image: url("../img/backgrounds/features_mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/backgrounds/features_mobile@2x.png");
+    background-image: url("../img/backgrounds/features_mobile@2x.webp");
   }
 }
 
@@ -1340,14 +1376,16 @@ button,
   -ms-grid-columns: (260px)[4];
   grid-template-columns: repeat(4, 260px);
 }
-@media (max-width: 1366px) {
+@media (max-width: 1365px) {
   .cruises__list {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
   }
 }
 @media (max-width: 1023px) {
   .cruises__list {
+    width: auto;
     -ms-grid-columns: (309px)[2];
     grid-template-columns: repeat(2, 309px);
   }
@@ -1360,8 +1398,14 @@ button,
 }
 
 .card {
+  position: relative;
   max-height: 386px;
   overflow: auto;
+}
+@media (max-width: 1365px) {
+  .card {
+    max-height: 100%;
+  }
 }
 
 .card__image {
@@ -1375,7 +1419,7 @@ button,
 .card__upper-side h3 {
   position: absolute;
   bottom: 22px;
-  left: 30px;
+  left: 10%;
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -1397,20 +1441,34 @@ button,
 }
 
 .card__lower-side {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   padding: 29px 25px 35px 25px;
+  overflow: hidden;
   color: #f9fbfd;
   background-color: #011c40;
+  opacity: 0;
+}
+@media (max-width: 1365px) {
+  .card__lower-side {
+    height: 30vw;
+  }
 }
 @media (max-width: 1023px) {
   .card__lower-side {
+    height: 100%;
     padding: 28px 35px 20px 35px;
   }
 }
 @media (max-width: 767px) {
   .card__lower-side {
+    height: 100%;
     padding: 29px 25px 50px 25px;
   }
 }
@@ -1468,12 +1526,13 @@ button,
   }
 }
 
-.card:hover .card__upper-side {
-  display: none;
-}
-
-.card:hover .card__lower-side {
-  display: block;
+.card:hover .card__lower-side,
+.card:focus .card__lower-side,
+.card:focus-visible .card__lower-side,
+.card:focus-within .card__lower-side {
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
 }
 
 .booking {
@@ -1481,36 +1540,36 @@ button,
   padding-bottom: 50px;
   color: #011c40;
   background-color: #afd5ee;
-  background-image: url("../img/backgrounds/booking_desktop.png");
+  background-image: url("../img/backgrounds/booking_desktop.webp");
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .booking {
-    background-image: url("../img/backgrounds/booking_desktop@2x.png");
+    background-image: url("../img/backgrounds/booking_desktop@2x.webp");
   }
 }
 @media (max-width: 1023px) {
   .booking {
     padding-top: 88px;
     padding-bottom: 100px;
-    background-image: url("../img/backgrounds/booking_tablet.png");
+    background-image: url("../img/backgrounds/booking_tablet.webp");
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .booking {
-    background-image: url("../img/backgrounds/booking_tablet@2x.png");
+    background-image: url("../img/backgrounds/booking_tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
   .booking {
     padding-top: 59px;
     padding-bottom: 65px;
-    background-image: url("../img/backgrounds/booking_mobile.png");
+    background-image: url("../img/backgrounds/booking_mobile.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .booking {
-    background-image: url("../img/backgrounds/booking_mobile@2x.png");
+    background-image: url("../img/backgrounds/booking_mobile@2x.webp");
   }
 }
 
@@ -1602,6 +1661,7 @@ button,
 
 .booking-form {
   max-width: 403px;
+  max-height: 455px;
   padding: 44px 50px 50px 50px;
   background-color: #011c40;
 }
@@ -1837,6 +1897,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__info {
+    max-width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1854,6 +1915,12 @@ button,
 }
 @media (max-width: 1023px) {
   .contacts__text {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__text {
+    max-width: 100%;
     margin-bottom: 27px;
   }
 }
@@ -1879,18 +1946,24 @@ button,
     background-position-y: 5px;
   }
 }
+@media (max-width: 1023px) and (min-width: 375px) {
+  .contacts__adress {
+    max-width: 100%;
+  }
+}
 
 .contacts__phone {
   background-image: url("../img/svg/phone.svg");
   background-repeat: no-repeat;
   background-position: 0;
+  margin-bottom: 20px;
 }
 
 .map {
   width: 560px;
   height: 306px;
   margin-right: 100px;
-  background-image: url("../img/backgrounds/map.png");
+  background-image: url("../img/backgrounds/map.webp");
   background-size: cover;
 }
 @media (max-width: 1023px) {
@@ -1902,6 +1975,12 @@ button,
   }
 }
 @media (max-width: 767px) {
+  .map {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 374px) {
   .map {
     width: 290px;
     height: 316px;
@@ -1923,6 +2002,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1966,6 +2047,8 @@ button,
 }
 
 .social {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
 }
 @media (max-width: 1370px) {
@@ -1994,6 +2077,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;

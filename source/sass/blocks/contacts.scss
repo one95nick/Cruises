@@ -39,6 +39,7 @@
   }
 
   @media (max-width: 767px) {
+    max-width: 100%;
     order: 1;
     padding-bottom: 37px;
   }
@@ -54,6 +55,11 @@
   line-height: 27px;
 
   @media (max-width: 1023px) {
+    margin-bottom: 27px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
     margin-bottom: 27px;
   }
 }
@@ -79,6 +85,10 @@
     max-width: 290px;
 
     background-position-y: 5px;
+
+    @media (min-width: 375px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -86,4 +96,5 @@
   background-image: url("../img/svg/phone.svg");
   background-repeat: no-repeat;
   background-position: 0;
+  margin-bottom: 20px;
 }

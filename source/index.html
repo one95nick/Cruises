@@ -17,9 +17,10 @@
       <header class="header no-js">
         <div class="container">
           <div class="header__wrapper">
-            <a class="header__logo logo" href="#">
+            <a class="header__logo logo">
               <img class="logo__image" src="img/svg/logo.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
             </a>
+            <div class="header__overlay"></div>
             <nav class="header__navigation navigation">
               <ul class="navigation__list navigation-list">
                 <li class="navigation-list__item">
@@ -34,7 +35,7 @@
                 </li>
                 <li class="navigation-list__item">
                   <a class="navigation-list__link" href="#cruises">
-                    Ближайшие круизы
+                    Ближайшие&nbsp;круизы
                   </a>
                 </li>
                 <li class="navigation-list__item">
@@ -81,7 +82,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/content/penguins_mobile.webp 1x, img/content/penguins_mobile@2x.webp 2x" type="image/webp">
                 <source media="(max-width: 1023px)" srcset="img/content/penguins_tablet.webp 1x, img/content/penguins_tablet@2x.webp 2x" type="image/webp">
-                <img class="travel__image" src="img/content/penguins_desktop.jpg" alt="Пингвины" width="560" height="301">
+                <img class="travel__image" src="img/content/penguins_desktop.jpg" alt="Пингвины" width="560" height="301" loading="lazy">
               </picture>
             </div>
           </div>
@@ -129,12 +130,12 @@
                 Ближайшие круизы
               </h2>
               <ul class="cruises__list">
-                <li class="cruises__card card">
+                <li class="cruises__card card" focusable="true">
                   <div class="card__upper-side">
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/astoria_mobile.webp 1x, img/content/astoria_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/astoria_tablet.webp 1x, img/content/astoria_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/astoria_desktop.jpg" alt="Круиз Астория" width="260" height="386">
+                      <img class="card__image" src="img/content/astoria_desktop.jpg" alt="Круиз Астория" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Астория”
@@ -180,7 +181,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/astoria_mobile.webp 1x, img/content/astoria_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/astoria_tablet.webp 1x, img/content/astoria_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/astoria_desktop.jpg" alt="Круиз Элайн" width="260" height="386">
+                      <img class="card__image" src="img/content/astoria_desktop.jpg" alt="Круиз Элайн" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Элайн”
@@ -226,7 +227,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/atlantis_mobile.webp 1x, img/content/atlantis_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/atlantis_tablet.webp 1x, img/content/atlantis_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/atlantis_desktop.jpg" alt="Круиз Атлантис" width="260" height="386">
+                      <img class="card__image" src="img/content/atlantis_desktop.jpg" alt="Круиз Атлантис" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз ”Атлантис”
@@ -272,7 +273,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/odissey_mobile.webp 1x, img/content/odissey_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/odissey_tablet.webp 1x, img/content/odissey_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/odissey_desktop.jpg" alt="Круиз Одиссей" width="260" height="386">
+                      <img class="card__image" src="img/content/odissey_desktop.jpg" alt="Круиз Одиссей" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Одиссей”
@@ -318,7 +319,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/olimpia_mobile.webp 1x, img/content/olimpia_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/olimpia_tablet.webp 1x, img/content/olimpia_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/olimpia_desktop.jpg" alt="Круиз Олимпия" width="260" height="386">
+                      <img class="card__image" src="img/content/olimpia_desktop.jpg" alt="Круиз Олимпия" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Олимпия”
@@ -364,7 +365,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/aurora_mobile.webp 1x, img/content/aurora_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/aurora_tablet.webp 1x, img/content/aurora_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/aurora_desktop.jpg" alt="Круиз Аврора" width="260" height="386">
+                      <img class="card__image" src="img/content/aurora_desktop.jpg" alt="Круиз Аврора" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Аврора”
@@ -410,7 +411,7 @@
                     <picture>
                       <source media="(max-width: 767px)" srcset="img/content/leonor_mobile.webp 1x, img/content/leonor_mobile@2x.webp 2x" type="image/webp">
                       <source media="(max-width: 1023px)" srcset="img/content/leonor_tablet.webp 1x, img/content/leonor_tablet@2x.webp 2x" type="image/webp">
-                      <img class="card__image" src="img/content/leonor_desktop.jpg" alt="Круиз Леонор" width="260" height="386">
+                      <img class="card__image" src="img/content/leonor_desktop.jpg" alt="Круиз Леонор" width="260" height="386" loading="lazy">
                     </picture>
                     <h3>
                       Круиз “Леонор”
@@ -459,12 +460,12 @@
                       <img class="card__image" src="img/content/minion_desktop.jpg" alt="Круиз Минион-1" width="260" height="386">
                     </picture>
                     <h3>
-                      Круиз “Минион-1”
+                      Круиз “Минион - 1”
                     </h3>
                   </div>
                   <div class="card__lower-side">
                     <h3>
-                      Круиз "Минион-1"
+                      Круиз "Минион - 1"
                     </h3>
                     <dl>
                       <dt>
@@ -512,7 +513,7 @@
                   Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
                 </p>
               </div>
-              <form class="booking__form booking-form" action="#" method="post">
+              <form class="booking__form booking-form" action="https://echo.htmlacademy.ru/" method="post">
                 <h3 class="booking-form__title">
                   Оставьте заявку и мы свяжемся с вами в ближайшее время
                 </h3>
@@ -520,7 +521,7 @@
                   <label class="visually-hidden" for="name">Имя</label>
                   <input type="text" name="user-name" id="name" placeholder="Имя" aria-label="Укажите ваше имя" required>
                   <label class="visually-hidden" for="phone">Контактный номер</label>
-                  <input type="tel" name="user-phone" id="phone" placeholder="Телефон" aria-label="Укажите номер вашего телефона" required>
+                  <input type="tel" name="user-phone" id="phone" placeholder="Телефон" aria-label="Укажите номер вашего телефона" required minlength="16">
                   <label class="visually-hidden" for="email">Контактный email</label>
                   <input type="email" name="user-email" id="email" placeholder="Email" aria-label="Укажите ваш Email" required>
                 </div>
@@ -546,9 +547,8 @@
             </h2>
             <div class="contacts__wrapper">
               <div class="contacts__map map">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed487391123e0336d8362d23ad876acc4b5c8f9fbd78c47cdd0219586046b0ab&amp;source=constructor"
-                ></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed487391123e0336d8362d23ad876acc4b5c8f9fbd78c47cdd0219586046b0ab&amp;source=constructor" loading="lazy">
+                </iframe>
               </div>
               <div class="contacts__info">
                 <p class="contacts__text">
@@ -568,7 +568,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
-            <a class="footer__logo logo" href="#">
+            <a class="footer__logo logo">
               <img class="logo__image" src="img/svg/logo.svg" alt="Логотип «Круизы в Антарктику»." width="70" height="38">
             </a>
             <nav class="footer__navigation navigation">
@@ -585,7 +585,7 @@
                 </li>
                 <li class="navigation-list__item navigation-list__item--footer">
                   <a class="navigation-list__link navigation-list__link--footer" href="#cruises">
-                    Ближайшие круизы
+                    Ближайшие&nbsp;круизы
                   </a>
                 </li>
                 <li class="navigation-list__item navigation-list__item--footer">
@@ -627,7 +627,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

@@ -5,12 +5,12 @@
   color: $color-tangaroa;
 
   background-color: #afd5ee;
-  background-image: url("../img/backgrounds/booking_desktop.png");
+  background-image: url("../img/backgrounds/booking_desktop.webp");
   background-size: cover;
 
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/booking_desktop@2x.png");
+    background-image: url("../img/backgrounds/booking_desktop@2x.webp");
   }
 
 
@@ -18,10 +18,10 @@
     padding-top: 88px;
     padding-bottom: 100px;
 
-    background-image: url("../img/backgrounds/booking_tablet.png");
+    background-image: url("../img/backgrounds/booking_tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/booking_tablet@2x.png");
+      background-image: url("../img/backgrounds/booking_tablet@2x.webp");
     }
   }
 
@@ -29,10 +29,10 @@
     padding-top: 59px;
     padding-bottom: 65px;
 
-    background-image: url("../img/backgrounds/booking_mobile.png");
+    background-image: url("../img/backgrounds/booking_mobile.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/booking_mobile@2x.png");
+      background-image: url("../img/backgrounds/booking_mobile@2x.webp");
     }
   }
 }
