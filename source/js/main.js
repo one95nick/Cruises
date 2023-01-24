@@ -9,11 +9,15 @@ const headerLink = document.querySelectorAll('.navigation-list__link');
 
 header.classList.remove('no-js');
 headerToggle.addEventListener('click', () => header.classList.toggle('is-active'));
-headerToggle.addEventListener('click', () => header.classList.toggle('modal'));
+// headerToggle.addEventListener('click', () => header.classList.toggle('modal'));
 headerOverlay.addEventListener('click', () => header.classList.remove('is-active'));
+// headerOverlay.addEventListener('click', () => header.classList.remove('modal'));
 headerLink.forEach((menu) => {
   menu.addEventListener('click', () => header.classList.remove('is-active'));
 });
+// headerLink.forEach((menu) => {
+//   menu.addEventListener('click', () => header.classList.remove('modal'));
+// });
 
 // ---------------------------------
 

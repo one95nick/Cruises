@@ -55,6 +55,7 @@
 }
 
 .header__logo {
+  flex-shrink: 0;
   margin-left: 35px;
 
   @media (max-width: 1023px) {
@@ -68,7 +69,6 @@
 
 .header__wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -86,10 +86,10 @@
 }
 
 .header__toggle {
-  z-index: 4;
   position: absolute;
   top: 25px;
   right: 20px;
+  z-index: 4;
 
   display: none;
   width: 26px;
@@ -101,10 +101,6 @@
   @media (max-width: 767px) {
     display: block;
   }
-}
-
-.header.is-active body {
-  overflow: hidden;
 }
 
 .header.is-active {
@@ -126,6 +122,8 @@
 
 .header.is-active .header__overlay {
   display: block;
+
+  background-color: rgba($color-tangaroa, 0.5);
 }
 
 
