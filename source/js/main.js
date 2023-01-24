@@ -6,18 +6,20 @@ const header = document.querySelector('header');
 const headerToggle = document.querySelector('.header__toggle');
 const headerOverlay = document.querySelector('.header__overlay');
 const headerLink = document.querySelectorAll('.navigation-list__link');
+const body = document.querySelector('body');
 
 header.classList.remove('no-js');
-headerToggle.addEventListener('click', () => header.classList.toggle('is-active'));
-// headerToggle.addEventListener('click', () => header.classList.toggle('modal'));
+
+headerToggle.addEventListener('click', () => {
+  header.classList.toggle('is-active');
+  body.classList.toggle('open-menu');
+});
+
 headerOverlay.addEventListener('click', () => header.classList.remove('is-active'));
-// headerOverlay.addEventListener('click', () => header.classList.remove('modal'));
+
 headerLink.forEach((menu) => {
   menu.addEventListener('click', () => header.classList.remove('is-active'));
 });
-// headerLink.forEach((menu) => {
-//   menu.addEventListener('click', () => header.classList.remove('modal'));
-// });
 
 // ---------------------------------
 
