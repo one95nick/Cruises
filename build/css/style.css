@@ -1375,9 +1375,9 @@ button,
 }
 @media (max-width: 1365px) {
   .cruises__list {
+    width: 100%;
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
   }
 }
 @media (max-width: 1023px) {
@@ -1389,8 +1389,8 @@ button,
 }
 @media (max-width: 767px) {
   .cruises__list {
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -2076,6 +2076,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-width: 132px;
   margin: 0;
   padding: 0;
   list-style: none;

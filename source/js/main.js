@@ -15,10 +15,15 @@ headerToggle.addEventListener('click', () => {
   body.classList.toggle('open-menu');
 });
 
-headerOverlay.addEventListener('click', () => header.classList.remove('is-active'));
+headerOverlay.addEventListener('click', () => {
+  header.classList.remove('is-active');
+  body.classList.remove('open-menu');
+});
+
 
 headerLink.forEach((menu) => {
   menu.addEventListener('click', () => header.classList.remove('is-active'));
+  menu.addEventListener('click', () => body.classList.remove('open-menu'));
 });
 
 // ---------------------------------

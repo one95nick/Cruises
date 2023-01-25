@@ -53,16 +53,18 @@
   grid-template-columns: repeat(4, 260px);
 
   @media (max-width: 1365px) {
-    grid-template-columns: repeat(4, 1fr);
     width: 100%;
+
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (max-width: 1023px) {
     width: auto;
+
     grid-template-columns: repeat(2, 309px);
   }
 
   @media (max-width: 767px) {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
