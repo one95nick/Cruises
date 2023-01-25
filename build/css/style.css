@@ -1389,8 +1389,9 @@ button,
 }
 @media (max-width: 767px) {
   .cruises__list {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    width: 100%;
   }
 }
 
@@ -1501,6 +1502,11 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+@media (max-width: 767px) {
+  .card__lower-side dd {
+    max-width: 100%;
+  }
 }
 
 .card__btn {
